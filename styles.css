@@ -134,7 +134,7 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   padding: 16px;
   border: 1.5px solid blue;
   border-radius: 10px;
