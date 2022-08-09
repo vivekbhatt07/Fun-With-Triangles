@@ -26,6 +26,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #94a3b8;
+}
+
 .nav {
   padding: 1rem;
   background-color: #292524;
@@ -43,5 +47,63 @@ a {
   font-size: 80%;
 }
 .active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #94a3b8;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.angle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+input {
+  padding: 8px 12px;
+  text-align: center;
+  font-family: inherit;
+  border-radius: 8px;
+  border: none;
+}
+
+label {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+button {
+  padding: 8px 10px;
+  font-family: inherit;
+  border-radius: 8px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #94a3b8;
+  color: #fff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.1s;
+}
+
+h1 {
+  color: #94a3b8;
+  font-weight: 500;
 }
