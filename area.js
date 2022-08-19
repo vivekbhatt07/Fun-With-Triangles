@@ -11,7 +11,7 @@ areaBtn.addEventListener("click", function validateArea() {
     );
     areaText.innerText = area;
   } else {
-    hypotenuseText.innerText = "Invalid Data Entered";
+    areaText.innerText = "Invalid Data Entered";
   }
 
 });
