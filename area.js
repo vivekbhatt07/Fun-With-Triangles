@@ -19,5 +19,5 @@ areaBtn.addEventListener("click", function validateArea() {
 function areaCalc(numOne, numTwo) {
   const product = numOne * numTwo;
   const halfOfProduct = product / 2;
-  return halfOfProduct;
+  return halfOfProduct.toFixed(2);
 }
