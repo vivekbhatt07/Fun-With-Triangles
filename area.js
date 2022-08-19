@@ -4,11 +4,16 @@ const areaBtn = document.querySelector(".check_area_btn");
 const areaText = document.querySelector(".area_text");
 
 areaBtn.addEventListener("click", function validateArea() {
-  const area = areaCalc(
-    Number(heightLength.value),
-    Number(basementLength.value)
-  );
-  areaText.innerText = area;
+  if(!(Number(heightLength.value) === 0) && !(Number(basementLength.value) === 0)) {
+    const area = areaCalc(
+      Number(heightLength.value),
+      Number(basementLength.value)
+    );
+    areaText.innerText = area;
+  } else {
+    hypotenuseText.innerText = "Invalid Data Entered";
+  }
+
 });
 
 function areaCalc(numOne, numTwo) {
